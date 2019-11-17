@@ -1,7 +1,13 @@
 # Golang algorithms
 
-* [Binary Search](01_binary_search)
-* [Selection sort](02_selection_sort)
-* [Recursive](03_recursive)
-* [Quick sort](04_quicksort)
-* [Hash tables](05_hash_tables)
+**Search**
+* [Binary search](search/binary_search)
+* [Breadth first search](search/breadth_first_search)
+
+**Sort**
+* [Selection sort](sort/selection_sort)
+* [Quick sort](sort/quicksort)
+
+**Other**
+* [Recursive](recursive)
+* [Hash tables](hash_tables)
