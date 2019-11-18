@@ -1,12 +1,5 @@
 // Selection sort - O(n^2)
-package main
-
-import "fmt"
-
-func main() {
-
-	fmt.Println(SelectionSort([]int{10, 2, 4, 1, 8, 11})) // [1,2,4,8,10,11]
-}
+package selection_sort
 
 func SelectionSort(list []int) []int {
 	size := len(list)

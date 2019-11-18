@@ -1,14 +1,5 @@
 // Binary search - O(log n)
-package main
-
-import "fmt"
-
-func main() {
-	list := []int{1, 2, 3, 5, 6, 7, 8, 10, 11}
-
-	fmt.Println(BinarySearch(list, 10)) // true
-	fmt.Println(BinarySearch(list, 20)) // false
-}
+package binary_search
 
 func BinarySearch(list []int, el int) bool {
 	var iteration int

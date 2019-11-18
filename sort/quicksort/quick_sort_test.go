@@ -1,11 +1,11 @@
-package main
+package quicksort
 
 import (
 	"reflect"
 	"testing"
 )
 
-var dataQuickSort = []struct {
+var dataCases = []struct {
 	in  []int
 	out []int
 }{
@@ -17,7 +17,7 @@ var dataQuickSort = []struct {
 }
 
 func TestQSort(t *testing.T) {
-	for n, value := range dataQuickSort {
+	for n, value := range dataCases {
 		in := QuickSort(value.in)
 		out := value.out
 

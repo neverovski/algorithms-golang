@@ -1,11 +1,5 @@
 // Quick sort - O(n * log n)
-package main
-
-import "fmt"
-
-func main() {
-	fmt.Println(QuickSort([]int{10, 4, 5, 12, 1, 6})) // [1,4,5,6,10]
-}
+package quicksort
 
 func QuickSort(list []int) []int {
 	if len(list) < 2 {

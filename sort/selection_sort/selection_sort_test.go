@@ -1,11 +1,11 @@
-package main
+package selection_sort
 
 import (
 	"reflect"
 	"testing"
 )
 
-var dataSelectionSort = []struct {
+var dataCases = []struct {
 	in  []int
 	out []int
 }{
@@ -16,7 +16,7 @@ var dataSelectionSort = []struct {
 }
 
 func TestSelectionSort(t *testing.T) {
-	for n, value := range dataSelectionSort {
+	for n, value := range dataCases {
 		in := SelectionSort(value.in)
 		out := value.out
 

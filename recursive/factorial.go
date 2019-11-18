@@ -1,13 +1,5 @@
 // Factorial - n!
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	fmt.Println(Factorial(5)) // 120
-}
+package recursive
 
 func Factorial(el int) int {
 	if el == 0 {

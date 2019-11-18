@@ -1,20 +1,7 @@
 // Hash tables - O(1)
-package main
-
-import "fmt"
+package hash_tables
 
 var data = map[string]int{}
-
-func main() {
-	fmt.Println("SetData - Tom:", SetData("Tom", 30))     // true
-	fmt.Println("SetData - Harry:", SetData("Harry", 25)) // true
-
-	fmt.Println(GetData("Tom")) // (30,true)
-	fmt.Println(GetData("TOM")) // (0,false)
-
-	fmt.Println("DeleteData - Harry:", DeleteData("Harry")) // true
-	fmt.Println("DeleteData - Harry:", DeleteData("Harry")) // false
-}
 
 // Get data
 func GetData(name string) (int, bool) {

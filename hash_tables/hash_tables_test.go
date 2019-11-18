@@ -1,8 +1,8 @@
-package main
+package hash_tables
 
 import "testing"
 
-var dataHashTables = []struct {
+var dataCases = []struct {
 	name string
 	age  int
 }{
@@ -14,7 +14,7 @@ var dataHashTables = []struct {
 }
 
 func TestGetData(t *testing.T) {
-	for _, data := range dataHashTables {
+	for _, data := range dataCases {
 		setData := SetData(data.name, data.age)
 		if setData {
 			out := data.age
@@ -31,7 +31,7 @@ func TestGetData(t *testing.T) {
 }
 
 func TestDeleteData(t *testing.T) {
-	for _, data := range dataHashTables {
+	for _, data := range dataCases {
 		setData := SetData(data.name, data.age)
 		if setData {
 

@@ -1,10 +1,10 @@
-package main
+package binary_search
 
 import (
 	"testing"
 )
 
-var dataBinarySearch = []struct {
+var dataCases = []struct {
 	in  []int
 	el  int
 	out bool
@@ -18,7 +18,7 @@ var dataBinarySearch = []struct {
 }
 
 func TestBinarySearch(t *testing.T) {
-	for n, value := range dataBinarySearch {
+	for n, value := range dataCases {
 		in := BinarySearch(value.in, value.el)
 		out := value.out
 
