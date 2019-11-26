@@ -11,3 +11,4 @@
 **Other**
 * [Recursive](recursive)
 * [Hash tables](hash_tables)
+* [Dijkstra's algorithm](dijkstra_algorithm)
